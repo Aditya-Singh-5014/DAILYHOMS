@@ -1,0 +1,58 @@
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: $grey;
+  transform: translateY(30rem);
+
+  .footer {
+    width: 88%;
+    height: 90%;
+    margin: auto;
+    background-color: $grey;
+    @include flex-variable(row);
+    justify-content: space-around;
+    section {
+      height: 90%;
+      width: 20%;
+      background-color: $grey;
+      @include flex-variable(column);
+      align-items: flex-start;
+      justify-content: center;
+      a {
+        font-size: 1.5rem;
+        color: rgb(196, 196, 196);
+      }
+      h3 {
+        color: $white;
+        font-size: 2rem;
+      }
+    }
+
+    .footerOne {
+      .social {
+        img {
+          background-color: white;
+          height: 3rem;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+        }
+      }
+      div {
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .footerThree {
+      div {
+        @include flex-variable(row);
+        padding-bottom: 5%;
+        img {
+          height: 2rem;
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+}

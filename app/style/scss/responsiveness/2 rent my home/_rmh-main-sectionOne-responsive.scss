@@ -1,0 +1,59 @@
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+
+  .comparison-block {
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 30%;
+
+    .sectionOne {
+      .sectionOne-main {
+        .diyDeal {
+          width: 100%;
+        }
+        width: 80%;
+
+        @include flex-variable(column);
+        .about-img {
+          display: none;
+        }
+      }
+    }
+    .sectionTwo {
+      .sectionTwo-main {
+        @include flex-variable(column);
+        width: 80%;
+        .diyDeal {
+          width: 100%;
+        }
+        .about-img {
+          display: flex;
+          justify-content: center;
+          height: 50rem;
+          width: 80rem;
+          img {
+            height: 80%;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  .sectionThree {
+    height: 100%;
+  }
+}

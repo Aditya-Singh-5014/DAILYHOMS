@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+
+  background-color: rgb(246, 246, 246);
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: $Semi-Bold;
+  color: $grey;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: $Regular;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: $Regular;
+}
+
+span {
+  font-weight: $Semi-Bold;
+}

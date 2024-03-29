@@ -1,0 +1,103 @@
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+
+  .comparison-block {
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+
+  .sectionOne {
+    height: 70vh;
+  }
+
+  .sectionTwo {
+    h2 {
+      padding-left: 2%;
+    }
+    hr {
+      margin: 5rem 0;
+    }
+    height: 50vh;
+    .sectionTwo-One {
+      h2 {
+        padding-left: 2%;
+      }
+      img {
+        height: 50%;
+      }
+    }
+    .sectionOne-buttons {
+      margin-left: 2%;
+    }
+  }
+
+  .sectionThree {
+    height: 70rem;
+    .comparison-blocks {
+      .comparison-block {
+        width: 35%;
+      }
+    }
+  }
+
+  .chose-us {
+    height: 60rem;
+    .templates-one {
+      .chose-us-templates-one {
+        margin-bottom: 10rem;
+      }
+    }
+  }
+  .sectionFour {
+    .button {
+      margin-top: 10rem;
+    }
+    hr {
+      display: none;
+    }
+    .doorstep {
+      .templates-two {
+        section {
+          @include flex-variable(column);
+
+          .why-us {
+            width: 80%;
+            height: 50%;
+            margin-bottom: 5%;
+            margin-top: 5%;
+          }
+
+          .why-us-nine {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .slide-review {
+    width: 100%;
+    .review {
+      div {
+        padding-right: 1rem;
+        .star {
+          height: 20%;
+        }
+      }
+    }
+  }
+}

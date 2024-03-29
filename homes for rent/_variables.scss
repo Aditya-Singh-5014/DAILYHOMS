@@ -1,0 +1,42 @@
+// #font-color
+
+$red: rgb(236, 32, 42);
+$white: rgb(255, 255, 255);
+$grey: rgb(74, 82, 93);
+$greyFont: rgb(196, 196, 196);
+$black: rgb(0, 0, 0);
+
+// #font-weight
+
+$Regular: 400;
+$Medium: 500;
+$Semi-Bold: 600;
+$Bold: 700;
+
+// #dispay flex variable
+
+@mixin flex-variable($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin button($width) {
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 1rem 2rem;
+  color: $red;
+  border-color: $red;
+  border-radius: 0.6rem;
+  background-color: $white;
+  font-weight: $Semi-Bold;
+  transition: 0.5s;
+  cursor: pointer;
+  width: $width;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}

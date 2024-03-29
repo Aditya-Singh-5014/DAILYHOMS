@@ -1,0 +1,388 @@
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 8rem;
+  padding: 0rem 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .nav {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.header .nav .logo {
+  height: 80%;
+  cursor: pointer;
+}
+
+.header .nav .ulList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .liList {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.header .nav .liList a {
+  color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .nav .liList a:hover {
+  color: #ec202a;
+  padding-bottom: 1.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.31rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header .login {
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .login .button-login {
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 1rem 2rem;
+  color: #ec202a;
+  border-color: #ec202a;
+  border-radius: 0.6rem;
+  background-color: white;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.header .login .button-login:hover {
+  background-color: #ec202a;
+  color: white;
+}
+
+.header .login .cart {
+  cursor: pointer;
+}
+
+body {
+  color: #4a525d;
+}
+
+body .home_background {
+  width: 100%;
+  height: 100vh;
+  padding-top: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 37, 37, 0.4)), to(rgba(89, 37, 37, 0.2))), url("red_house.jpeg");
+  background: linear-gradient(rgba(89, 37, 37, 0.4), rgba(89, 37, 37, 0.2)), url("red_house.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  color: #f6f6f6;
+  text-align: center;
+}
+
+body .home_background .dream {
+  margin: 0.5em 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #f6f6f6;
+}
+
+body .home_background .excellent {
+  font-weight: bold;
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  color: #f6f6f6;
+}
+
+body .container {
+  position: relative;
+  padding: 5%;
+}
+
+body .container .head1,
+body .container .columns,
+body .container .price-range,
+body .container .headpara {
+  margin: 0.5em 0;
+}
+
+body .container .child {
+  position: absolute;
+  background-color: white;
+  top: -15em;
+  padding: 2.5em 10%;
+  width: 90%;
+  border-radius: 5px;
+  border-left: solid 5px #ec202a;
+  -webkit-box-shadow: 2px 2px 20px rgba(89, 37, 37, 0.2);
+          box-shadow: 2px 2px 20px rgba(89, 37, 37, 0.2);
+}
+
+.home_background .trustpilot{
+  height: 3rem;
+}
+
+body .container .child .search {
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 1rem 2rem;
+  color: #ec202a;
+  border-color: #ec202a;
+  border-radius: 0.6rem;
+  background-color: white;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 20rem;
+  margin-left: 40%;
+}
+
+body .container .child .search:hover {
+  background-color: #ec202a;
+  color: white;
+}
+
+body .container .child .hline {
+  margin: 1em 0;
+  font-size: 2.5em;
+  width: 2em;
+  height: 0.15em;
+  background-color: #4a525d;
+}
+
+body .container .child .head1 {
+  font-size: 2.5em;
+}
+
+body .container .child .headpara {
+  font-size: 1em;
+}
+
+body .container .child .sub_child {
+  width: 100%;
+  margin: 1em auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .child .sub_child .columns {
+  text-align: left;
+  height: auto;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .child .sub_child .columns .label {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+body .container .child .sub_child .columns .input {
+  color: #000;
+  width: 100%;
+  height: 3em;
+  padding: 0.1em 0.5em;
+}
+
+body .container .child .price-range {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+body .container .child .price-range .range,
+body .container .child .price-range .labelrange {
+  display: block;
+  width: 90%;
+  margin: 0.5em;
+  height: auto;
+}
+
+body .container .child .price-range .range #spanRange,
+body .container .child .price-range .labelrange #spanRange {
+  color: #ec202a;
+}
+
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: #4a525d;
+  -webkit-transform: translateY(30rem);
+          transform: translateY(30rem);
+}
+
+footer .footer {
+  width: 88%;
+  height: 90%;
+  margin: auto;
+  background-color: #4a525d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer section {
+  height: 90%;
+  width: 20%;
+  background-color: #4a525d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer section a {
+  font-size: 1.5rem;
+  color: #c4c4c4;
+}
+
+footer .footer section h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+footer .footer .footerOne .social img {
+  background-color: white;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+footer .footer .footerOne div img {
+  margin-right: 1rem;
+}
+
+footer .footer .footerThree div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5%;
+}
+
+footer .footer .footerThree div img {
+  height: 2rem;
+  padding-right: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

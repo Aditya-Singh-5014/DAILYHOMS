@@ -1,0 +1,76 @@
+.parallax {
+  min-height: 50rem;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-y: visible;
+  background-size: contain;
+  background-image: url("/images/home.jpg");
+}
+
+.chose-us {
+  text-align: center;
+  width: 88%;
+  margin: auto;
+  color: $grey;
+  height: 50vh;
+  @include flex-variable(column);
+  align-items: flex-start;
+  .chose-us-txt {
+    transform: translateY(-40rem);
+    h1 {
+      font-weight: $Regular;
+      font-size: 4rem;
+      margin-bottom: 5%;
+      color: $white;
+    }
+
+    hr {
+      width: 20%;
+      height: 0.3rem;
+      background-color: $white;
+      margin-bottom: 1%;
+    }
+  }
+  .templates-one {
+    transform: translateY(-30rem);
+    border-radius: 1rem;
+    height: 160%;
+    width: 100%;
+    background-color: $white;
+    .chose-us-templates {
+      @include flex-variable(row);
+      justify-content: space-evenly;
+      width: 100%;
+      div {
+        transform: translateY(-10rem);
+        @include flex-variable(column);
+        justify-content: space-around;
+        padding-top: 2rem;
+        text-align: center;
+        height: 25rem;
+        width: 28%;
+        background-color: $white;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        border-left: 0.4rem $red solid;
+      }
+    }
+  }
+  button {
+    @include button(25rem);
+    font-size: 1.7rem;
+    font-weight: $Semi-Bold;
+    height: 5rem;
+    border-width: 0.2rem;
+    background-color: $white;
+    color: $red;
+    transform: translateY(-5rem);
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}

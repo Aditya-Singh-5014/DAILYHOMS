@@ -1,0 +1,629 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+}
+
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+  height: 5rem;
+  padding: 0rem 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .nav {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: inherit;
+}
+
+.header .nav .logo {
+  height: 80%;
+  cursor: pointer;
+}
+
+.header .nav .ulList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .nav .liList {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.header .nav .liList a {
+  color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .nav .liList a:hover {
+  color: #ec202a;
+  padding-bottom: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header .login {
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .login .button-login {
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 1rem 2rem;
+  color: #ec202a;
+  border-color: #ec202a;
+  border-radius: 0.6rem;
+  background-color: white;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.header .login .button-login:hover {
+  background-color: #ec202a;
+  color: white;
+}
+
+.header .login .cart {
+  cursor: pointer;
+}
+
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: #4a525d;
+  margin-top: 50rem;
+}
+
+footer .footer {
+  width: 88%;
+  height: 90%;
+  margin: auto;
+  background-color: #4a525d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+footer .footer section {
+  height: 90%;
+  width: 20%;
+  background-color: #4a525d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .footer section a {
+  font-size: 0.9375rem;
+  color: #c4c4c4;
+}
+
+footer .footer section h3 {
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer .footer .footerOne .social img {
+  background-color: white;
+  height: 1.8rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+}
+
+footer .footer .footerOne div img {
+  margin-right: 0.625rem;
+}
+
+footer .footer .footerThree div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+footer .footer .footerThree div img {
+  height: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+body {
+  color: #4a525d;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 2em;
+}
+
+body input {
+  width: 90%;
+  height: 3.5em;
+  padding: 0.1em 0.5em;
+}
+
+body label::after {
+  content: " *";
+  color: #ec202a;
+}
+
+body h1 {
+  font-size: 3em;
+}
+
+body .head {
+  background-color: #4a525d;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-image: url("images/contact.jpg");
+  background-size: cover;
+}
+
+body .head .head1 {
+  position: absolute;
+  top: 4em;
+  width: 100%;
+  left: 2.5%;
+  height: auto;
+  font-size: 3.5em;
+  color: white;
+  font-weight: bold;
+}
+
+body .head .head2 {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  left: 20%;
+  height: auto;
+  font-size: 3em;
+  color: white;
+}
+
+body .half {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border-left: solid 5px #ec202a;
+  z-index: 12;
+}
+
+body .half .sections {
+  margin: 0 auto;
+  width: 85%;
+  padding-top: 4em;
+}
+
+body .half .sections .headings {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+body .half .sections .divide {
+  margin: 0.5em auto 1em 0;
+  font-size: 2.5em;
+  width: 2.5em;
+  height: 0.05em;
+  background-color: #4a525d;
+}
+
+body .half .sections .items {
+  margin: 0.5em 0;
+  font-weight: normal;
+}
+
+body .half .sections .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 2em auto;
+}
+
+body .half .sections .three {
+  width: 33.33%;
+  height: 40vh;
+}
+
+body .half .sections .book-div,
+body .half .sections .para-div {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body .half .sections .para-div .paragraph {
+  font-size: 1.8em;
+  margin: 1em;
+}
+
+body .half .sections .book-button {
+  text-transform: uppercase;
+  width: 60%;
+  height: auto;
+  font-size: 2em;
+  padding: 0.5em;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: white;
+  background-color: #ec202a;
+  border: 1px solid #ec202a;
+  -webkit-box-shadow: 2px 2px 20px #c4c4c4;
+  box-shadow: 2px 2px 20px #c4c4c4;
+}
+
+body .half .sections .book-button:hover {
+  color: #ec202a;
+  background-color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .half .sections .invisible {
+  width: 100%;
+  height: 30vh;
+}
+
+body .parent-form-section {
+  position: relative;
+}
+
+body .parent-form-section .form-section {
+  border-radius: 10px;
+  position: absolute;
+  -webkit-box-shadow: 1px 1px 1px #fff, 1px 1px 1px #fff, 1px 1px 1px #fff,
+    2px 2px 20px #c4c4c4;
+  box-shadow: 1px 1px 1px #fff, 1px 1px 1px #fff, 1px 1px 1px #fff,
+    2px 2px 20px #c4c4c4;
+  width: 60%;
+  height: auto;
+  padding: 3em;
+  left: 20%;
+  z-index: 1;
+  background-color: white;
+  -webkit-transform: translateY(-9em);
+  transform: translateY(-9em);
+}
+
+body .parent-form-section .form-section .request {
+  font-weight: normal;
+}
+
+body .parent-form-section .form-section .divide-two {
+  margin: 0.5em 0;
+  font-size: 2.5em;
+  width: 2em;
+  height: 0.05em;
+  background-color: #4a525d;
+}
+
+body .parent-form-section .form-section .form-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
+
+body .parent-form-section .form-section .checkbox {
+  font-size: 1.5em;
+  margin: 2em auto;
+}
+
+body .parent-form-section .form-section .checkbox .check {
+  height: 1em;
+  width: 1em;
+}
+
+body .parent-form-section .form-section .checkbox .last-label::after {
+  content: " .";
+  width: 1em;
+  height: 1em;
+  color: white;
+}
+
+body .parent-form-section .form-section .checkbox .anchor {
+  text-decoration: none;
+  color: #ec202a;
+}
+
+body .parent-form-section .form-section .checkbox .requests {
+  display: block;
+  margin: 1em auto auto auto;
+  background-color: #ec202a;
+  color: white;
+  font-size: 0.8em;
+  padding: 0.35em;
+  outline: none;
+  cursor: pointer;
+  width: 45%;
+  height: 2.3em;
+  border: none;
+  text-align: center;
+  border-radius: 0.5em;
+  color: white;
+  background-color: #ec202a;
+  border: 1px solid #ec202a;
+}
+
+body .parent-form-section .form-section .checkbox .requests:hover {
+  color: #ec202a;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 60%;
+    width: 100%;
+  }
+  body .head .head1 {
+    position: absolute;
+    top: 5em;
+    width: 100%;
+    height: auto;
+    font-size: 3.5em;
+  }
+  body .head .head2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    font-size: 2.5em;
+  }
+  @media screen and (max-width: 400px) {
+    html {
+      font-size: 35%;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+    }
+    header .button {
+      font-size: 1.3rem;
+    }
+
+    body .head {
+      height: 40vh;
+    }
+    body .head .head1 {
+      position: absolute;
+      top: 35%;
+      width: 100%;
+      left: 3%;
+      height: auto;
+      font-size: 3em;
+    }
+    body .head .head2 {
+      position: absolute;
+      width: 100%;
+      top: 55%;
+      left: 10%;
+      font-size: 2.5em;
+    }
+    body .half .sections .second {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+    }
+    body .half .sections .three {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+    body .half .sections .two {
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+    body .half .sections .one {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+    body .half .first {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+    body .half .sections .divide {
+      margin: 0.5em auto;
+      font-size: 2.5em;
+      width: 2.5em;
+      height: 0.05em;
+      background-color: #4a525d;
+    }
+    body .parent-form-section .form-section {
+      width: 100%;
+      left: 0;
+    }
+    body input {
+      width: 90%;
+      height: 2.5em;
+      padding: 0.1em 0.5em;
+    }
+    footer {
+      height: 30vh;
+      width: 100%;
+      background-color: #4a525d;
+      margin-top: 50rem;
+    }
+    .header .login .button-login {
+      height: 2em;
+      width: 5em;
+      margin: 0 1em;
+      font-size: 2em;
+      padding: 0;
+    }
+
+    footer {
+      height: 40rem;
+    }
+
+    footer .footer {
+      height: 100%;
+    }
+  }
+}
+/*# sourceMappingURL=style.css.map */

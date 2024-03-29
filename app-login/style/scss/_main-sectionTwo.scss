@@ -1,0 +1,59 @@
+.sectionTwo {
+  height: 100vh;
+  .sectionTwo-inner {
+    width: 65%;
+    height: 90%;
+    padding-top: 5%;
+    margin: auto;
+    .sectionTwo-One,
+    .sectionTwo-Two {
+      border-radius: 0.5rem;
+      border-left: 0.4rem $red solid;
+    }
+
+    .sectionTwo-One {
+      height: 25%;
+      @include flex-variable(column);
+      justify-content: center;
+
+      .brand {
+        width: 60%;
+        margin: 1rem auto;
+        @include flex-variable(row);
+      }
+    }
+
+    .sectionTwo-Two {
+      height: 70%;
+      margin-top: 5%;
+      @include flex-variable(column);
+      justify-content: center;
+
+      hr {
+        width: 5%;
+        margin-top: 3rem;
+      }
+
+      .filter {
+        height: 30%;
+        margin: 5% 0;
+        background-color: grey;
+        width: 100%;
+      }
+
+      .button {
+        @include button(25rem);
+        font-size: 1.7rem;
+        font-weight: $Semi-Bold;
+        height: 6rem;
+        border-width: 0.2rem;
+        background-color: $red;
+        color: $white;
+        &:hover {
+          background-color: $white;
+          color: $red;
+        }
+      }
+    }
+  }
+}

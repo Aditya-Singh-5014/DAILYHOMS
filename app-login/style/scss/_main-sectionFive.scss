@@ -1,0 +1,23 @@
+.sectionFive {
+  height: 70vh;
+  width: 100%;
+  transform: translateY(15rem);
+  .agent-details {
+    width: 88%;
+    margin: auto;
+    div {
+      height: 30rem;
+      background-color: gray;
+    }
+    h1 {
+      font-weight: $Regular;
+      margin-bottom: 1%;
+    }
+    hr {
+      width: 5%;
+      height: 0.3rem;
+      background-color: $grey;
+      margin-bottom: 5%;
+    }
+  }
+}

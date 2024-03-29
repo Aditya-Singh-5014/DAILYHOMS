@@ -1,0 +1,271 @@
+.save-divs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  margin-bottom: 5em;
+}
+
+.formed {
+  width: 90%;
+  height: 3.5em;
+  padding: 0.1em 0.5em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.login {
+  border-radius: 10px;
+  width: 60%;
+  height: auto;
+  padding: 3em;
+  left: 20%;
+  margin: 1em auto;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+.divide-two {
+  margin: 0.5em 0;
+  font-size: 2.5em;
+  width: 2em;
+  height: 0.05em;
+  background-color: rgb(74, 82, 93);
+}
+
+.loginlabels,
+.request {
+  font-weight: bold !important;
+}
+
+.logdetail {
+  line-height: 1.5;
+  color: #4a525d;
+  font-size: 1.5em;
+}
+
+.form-elements {
+  margin: 2em auto;
+}
+
+.signin {
+  display: block;
+  margin: 1em;
+  background-color: rgb(236, 32, 42);
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  padding: 0.35em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  height: 2em;
+  border: none;
+  text-align: center;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(236, 32, 42);
+  width: 20%;
+}
+
+.monologo {
+  width: 20%;
+  height: 5em;
+  margin-left: 0.5em;
+}
+
+.strip {
+  background-color: #2f3042;
+  width: 100%;
+  height: 2.5em;
+  margin: 0.5em;
+}
+
+.logindetail {
+  font-size: 1.5em;
+}
+
+.sliders-div {
+  width: 45%;
+  height: auto;
+}
+
+.rangediv {
+  width: 100%;
+  height: auto;
+  padding: 0.5em;
+}
+
+label:hover ~ input {
+  outline: 2px solid rgb(236, 32, 42);
+}
+
+label:hover ~ input {
+  outline: 2px solid rgb(236, 32, 42);
+}
+
+.rupee::before {
+  content: "₹";
+  color: rgb(236, 32, 42);
+}
+
+.percent::after {
+  content: "%";
+  color: rgb(236, 32, 42);
+}
+
+.label {
+  text-align: center;
+  color: rgb(236, 32, 42);
+  font-weight: bold;
+}
+
+.range {
+  width: 100%;
+}
+
+.fir,
+.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subrange {
+  display: flex;
+  flex-direction: column;
+}
+
+.property,
+.label {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.you-save {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.line {
+  margin: 1em 0;
+}
+
+.formed:active {
+  outline: 2.5px solid #000;
+}
+
+.loginlabels {
+  color: rgb(74, 82, 93);
+  border-radius: 15px;
+}
+
+.signin:hover {
+  background-color: rgb(189, 22, 31);
+}
+
+.forget {
+  display: inline;
+  color: brown;
+  width: 25%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.forget:hover {
+  color: rgb(189, 22, 31);
+  text-decoration: underline;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .login {
+    width: 100%;
+    padding: 2rem;
+  }
+  .request {
+    margin-bottom: 4rem;
+  }
+  .monologo {
+    display: block;
+    margin: 4rem auto;
+    width: 20rem;
+    height: 7rem;
+  }
+  .form-elements {
+    margin: 0;
+    padding: 0 5rem;
+  }
+  .formed {
+    height: 4rem;
+    width: 100%;
+  }
+  .divide-two {
+    margin-bottom: 4rem;
+  }
+  .logdetail {
+    margin-bottom: 4rem;
+  }
+  .signin {
+    height: 4rem;
+    width: 45%;
+    margin: 4rem auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 30%;
+    /* alternative(font-size: 70%;) */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .strip {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .login {
+    width: 90%;
+    /* alternative(width: 100%;) */
+    padding: 2rem;
+  }
+  .request {
+    margin-bottom: 2rem;
+  }
+  .monologo {
+    display: block;
+    margin: 2rem auto;
+    width: 15rem;
+    height: 5rem;
+  }
+  .form-elements {
+    margin: 0;
+  }
+  .formed {
+    height: 4rem;
+    width: 100%;
+  }
+  .divide-two {
+    margin-bottom: 4rem;
+  }
+  .signin {
+    height: 2.5rem;
+    width: 15rem;
+    /* alt(width: 50%;) */
+    margin: 3rem auto;
+  }
+}

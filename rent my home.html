@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent My Home | Dailyhoms</title>
+    <!-- font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    </style>
+
+    <!-- stylesheet -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="app/style/scss/rent_my_home.css"
+      media="screen"
+    />
+
+    <!-- title photo -->
+    <link rel="icon" href="images/logo two.jpeg" type="image" />
+  </head>
+  <body>
+    <!-- #header -->
+    <header class="header" id="header">
+      <div class="nav" id="nav">
+        <img
+          onclick="location.href='index.html'"
+          class="logo"
+          src="images/logo.jpeg"
+          alt=""
+        />
+        <ul class="ulList">
+          <li class="liList ulList-One">
+            <a href="rent my home.html">RENT MY HOME</a>
+          </li>
+          <li class="liList ulList-Two">
+            <a href="homes for rent.htm">H0MES FOR RENT</a>
+          </li>
+          <li class="liList ulList-Four"><a href="aboutus.html">ABOUT</a></li>
+          <li class="liList ulList-Five">
+            <a href="contact.htm">CONTACT</a>
+          </li>
+        </ul>
+        <div class="login" id="login">
+          <button
+            onclick="location.href='login.htm'"
+            class="button-login button"
+          >
+            LOG IN
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sectionOne" id="sectionOne">
+        <h1>Rent My House</h1>
+        <div class="sectionOne-main">
+          <div class="diyDeal">
+            <h1>FOR OWNERS</h1>
+
+            <div class="about aboutOne">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>Free expert consultation</h3>
+            </div>
+            <div class="about aboutTwo">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>
+                Your property up on Dailyhoms.com, on the same day as you book
+              </h3>
+            </div>
+            <div class="about aboutThree">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>
+                You can take all the photos to upload and do all the viewings
+                yourself too
+              </h3>
+            </div>
+            <div class="about aboutFour">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>
+                Free unbiased, independent , next day callback from an adviser
+                guaranteed
+              </h3>
+            </div>
+            <div class="about aboutFive">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>Full negotiations and rent progression support</h3>
+            </div>
+            <div class="about aboutSix">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>
+                For Rent board up straight away, to tap into all local tenants
+                in the city
+              </h3>
+            </div>
+            <h1>₹599 only</h1>
+            <button onclick="location.href='rent my home.html'" class="button">
+              Rent My House
+            </button>
+          </div>
+          <div class="about-img">
+            <img src="images/rent my house image.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- #Section Two -->
+
+      <section class="sectionTwo" id="sectionTwo">
+        <div class="sectionTwo-main">
+          <div class="about-img">
+            <img src="images/pexels-kindel-media-6995139.jpg" alt="" />
+          </div>
+          <div class="diyDeal">
+            <h1>FOR TENANTS</h1>
+            <h2 style="padding-bottom: 5rem">
+              Everything from Dailyhoms gives the icing on the cake:
+            </h2>
+            <div class="about aboutOneOne">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>
+                Top spot on Dailyhoms -yes we’ll put you at the TOP of listings
+                on Dailyhoms at your required place
+              </h3>
+            </div>
+            <div class="about aboutTwoTwo">
+              <img src="images/svgs/redTick.svg" alt="" />
+              <h3>
+                Get your home/pg/flats look even better, with digitally
+                enhanced, professionally with Dailyhoms.com
+              </h3>
+            </div>
+            <h2 style="padding-top: 5rem">
+              Get your pg/flat/homes at an affordable price of 199
+            </h2>
+            <h1>₹199</h1>
+            <button onclick="location.href='homes for rent.htm'" class="button">
+              HOMES FOR RENT
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- #sectionThree Slider -->
+      <section class="sectionThree">
+        <div class="subrange">
+          <h1 class="request">
+            See how much you can save @ <strong>Dailyhoms</strong>
+          </h1>
+          <hr class="divide-two" />
+          <div class="save-divs">
+            <div class="sliders-div fir">
+              <p class="property">Your property value</p>
+              <div class="rangediv">
+                <input
+                  type="range"
+                  min="0"
+                  max="3000000"
+                  value="0"
+                  class="range"
+                  id="rangeInput"
+                />
+              </div>
+              <p class="label rupee" id="rangeOutput"></p>
+              <p class="property">Commission:</p>
+              <div class="rangediv">
+                <input
+                  type="range"
+                  min="1"
+                  max="5.0"
+                  value="0"
+                  class="range"
+                  id="commissionInput"
+                />
+              </div>
+              <p class="label percent" id="commissionOutput"></p>
+            </div>
+
+            <!-- c  o  m  m  e  n  t -->
+            <div class="sliders-div sec">
+              <h3 class="property fixed">Our fixed price from</h3>
+              <h2 class="you-save" value="-Rs499">
+                You save: <span class="save" id="save"></span>
+              </h2>
+              <hr class="line" width="95%" />
+              <h2 class="property based">
+                Savings based on a one-off fixed fee of £499.
+              </h2>
+            </div>
+          </div>
+          <button onclick="location.href='rent my home.htm'" class="sellhome">
+            rent my house
+          </button>
+        </div>
+      </section>
+      <section class="corousel">
+        <h1>OUR TEAM</h1>
+        <div class="gallery">
+          <div class="gallery-container">
+            <img
+              class="gallery-item gallery-item-1"
+              src="images/potraits/4.jpeg"
+              data-index="1"
+            />
+            <img
+              class="gallery-item gallery-item-2"
+              src="images/potraits/1.jpeg"
+              data-index="2"
+            />
+            <img
+              class="gallery-item gallery-item-3"
+              src="images/potraits/4.jpeg"
+              data-index="3"
+            />
+            <img
+              class="gallery-item gallery-item-4"
+              src="images/potraits/3.jpeg"
+              data-index="4"
+            />
+            <img
+              class="gallery-item gallery-item-5"
+              src="images/potraits/5.jpeg"
+              data-index="5"
+            />
+          </div>
+          <div class="gallery-controls"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <section class="footerOne">
+          <img style="margin-bottom: 10%" src="" alt="" />
+          <h3 style="margin-bottom: 10%">Connect with us</h3>
+          <div style="margin-bottom: 10%" class="social">
+            <a href=""><img src="images/svgs/facebook.svg" alt="" /></a>
+            <a href=""><img src="images/svgs/twitter.svg" alt="" /></a>
+            <a href=""><img src="images/svgs/instagram.svg" alt="" /></a>
+            <a href=""><img src="images/svgs/linkedin.svg" alt="" /></a>
+          </div>
+          <a style="margin-bottom: 5%" href="login.htm">Log in</a>
+          <a style="margin-bottom: 5%" href="rent my home.html"
+            >Rent Your Home at online Realtech</a
+          >
+          <a style="margin-bottom: 5%" href="homes for rent.htm"
+            >Get your house at affordable price</a
+          >
+        </section>
+
+        <section class="footerTwo">
+          <h3 style="margin-bottom: 10%">Useful Links</h3>
+          <a style="margin-bottom: 5%" href="aboutus.html">The Team</a>
+          <a style="margin-bottom: 5%" href="privacy.htm">Privacy Policy</a>
+          <a style="margin-bottom: 5%" href="terms.htm">Terms & Conditions</a>
+        </section>
+
+        <section class="footerThree">
+          <h3 style="margin-bottom: 10%">Contact</h3>
+
+          <div style="margin-bottom: 5%">
+            <img src="images/svgs/phone.svg" alt="" /><a
+              href="tel:+919650481405"
+              onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+              ><p class="call-button">+919650481405</p></a
+            >
+            >
+          </div>
+          <div style="margin-bottom: 5%">
+            <img src="images/svgs/phone.svg" alt="" /><a
+              href="tel:+919650481405"
+              onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+              ><p class="call-button">+919650481405</p></a
+            >
+            >
+          </div>
+          <div style="margin-bottom: 5%">
+            <img src="images/svgs/email.svg" alt="" /><a href=""
+              >contact@homespe.com</a
+            >
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="app/script/app.js"></script>
+    <script>
+      const slider = document.getElementById("rangeInput");
+      const value1 = document.getElementById("rangeOutput");
+      value1.textContent = slider.value;
+      slider.oninput = function () {
+        value1.textContent = this.value;
+      };
+
+      const commission = document.getElementById("commissionInput");
+      const value2 = document.getElementById("commissionOutput");
+      value2.textContent = commission.value;
+      commission.oninput = function () {
+        value2.textContent = this.value;
+      };
+    </script>
+  </body>
+</html>

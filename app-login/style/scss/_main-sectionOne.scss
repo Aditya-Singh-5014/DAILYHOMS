@@ -1,0 +1,44 @@
+.sectionOne {
+  padding-top: 14rem;
+  height: 120vh;
+  width: 88%;
+  margin: auto;
+
+  h2 {
+    margin-top: 2rem;
+  }
+  h1,
+  h2 {
+    line-height: 1.5;
+    color: $grey;
+  }
+  .slide-review {
+    height: 30rem;
+    background-color: gray;
+  }
+  .sectionOne-buttons {
+    width: 55rem;
+    @include flex-variable(row);
+    button {
+      @include button(25rem);
+      font-size: 1.7rem;
+      font-weight: $Semi-Bold;
+      height: 6rem;
+      border-width: 0.2rem;
+    }
+    .sectionOne-button-one {
+      background-color: $red;
+      color: $white;
+      &:hover {
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }
+  .sectionOne-button-two {
+    &:hover {
+      background-color: $white;
+      color: $red;
+    }
+  }
+}
